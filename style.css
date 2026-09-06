@@ -9,6 +9,8 @@ body {
   font-family: "Poppins", sans-serif;
   background: #080b12;
   color: white;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* Navbar */
@@ -438,6 +440,109 @@ footer {
   padding: 25px;
   color: #8d96a8;
   font-size: 13px;
+}
+
+
+/* tara */
+/* Animated Star Background */
+
+body {
+  background: #080b12;
+  overflow-x: hidden;
+}
+
+/* সব তারার layer */
+
+.stars {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+
+  background: white;
+
+  box-shadow:
+    50px 100px white,
+    150px 200px white,
+    250px 80px white,
+    350px 300px white,
+    450px 150px white,
+    550px 400px white,
+    650px 100px white,
+    750px 250px white,
+    850px 50px white,
+    950px 350px white,
+    1050px 180px white,
+    1150px 450px white,
+    1250px 120px white,
+    100px 500px white,
+    300px 600px white,
+    500px 700px white,
+    700px 550px white,
+    900px 650px white,
+    1100px 750px white,
+    1300px 500px white,
+    80px 800px white,
+    250px 900px white,
+    450px 1000px white,
+    650px 850px white,
+    850px 950px white,
+    1050px 1100px white,
+    1200px 900px white;
+
+  animation: twinkle 3s infinite alternate;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* দ্বিতীয় layer */
+
+.stars2 {
+  width: 3px;
+  height: 3px;
+
+  opacity: 0.7;
+
+  animation-duration: 5s;
+
+  transform: scale(1.3);
+}
+
+
+/* তৃতীয় layer */
+
+.stars3 {
+  width: 1px;
+  height: 1px;
+
+  opacity: 0.5;
+
+  animation-duration: 2s;
+
+  transform: scale(1.8);
+}
+
+
+/* ঝিকিমিকি Animation */
+
+@keyframes twinkle {
+
+  0% {
+    opacity: 0.2;
+    filter: brightness(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(2);
+  }
+
+  100% {
+    opacity: 0.3;
+    filter: brightness(0.8);
+  }
+
 }
 
 
